@@ -1,0 +1,27 @@
+{% extends"index.html" %}
+{% block content %}
+<div class="table-responsive">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Album</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for album in albums %}
+            <tr >
+                <td> {{album.album_title}} </td>
+                <td> {{album.performer}} </td>
+                <td>
+                    <a href="/edit_album?id={{album.album_id}}"><button type="button" class="btn btn-warning" name="btn_edit_title" data-user_id="{{album.album_title}}">Edit</button></a>
+                    <a href="/delete_album?id={{album.album_id}}"><button type="button" class="btn btn-danger" name="btn_delete_title" data-user_id="{{album.album_title}}">Delete</button></a>
+                </td>
+            </tr>
+        {% endfor %}
+            <tr>
+                <td> <a href = "/new_album"><button type="button" class="btn btn-success" name="btn_new_album">New Album</button></a> </td>
+            </tr>
+        </tbody>
+    </table>
+ </div>
+{% endblock %}
