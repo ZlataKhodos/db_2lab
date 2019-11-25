@@ -6,4 +6,4 @@ host = 'localhost'
 port = '5432'
 database = 'db2lab'
 DATABASE_URI = os.getenv("DATABASE_URL",
-                         'postgres://adohqioukvvabi:498ca1304f19777a437060222f5dba84b81381b916151c266c69720a9f5a64d4@ec2-54-75-230-253.eu-west-1.compute.amazonaws.com:5432/d9od5ls3jhj0g1')
+                         'postgres://ppopphllqvpued:99e48000ee0d0dbffb74073d91f187039a4b343fae154372238deb32ee108fe9@ec2-184-73-192-172.compute-1.amazonaws.com:5432/d4ic27tigd2so3')
