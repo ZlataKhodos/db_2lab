@@ -8,6 +8,9 @@ from dao.orm.model import ormAlbum, ormStudent, ormGenre
 from forms.genre_form import GenreForm
 from forms.student_form import StudentForm
 from forms.album_form import AlbumForm
+import dash
+import dash_core_components as dcc
+import dash_html_components as html
 
 app = Flask(__name__)
 
@@ -268,5 +271,6 @@ def delete_genre():
 
     return redirect(url_for('show_genre'))
 
-if __name__ == '__main__':
-    app.run()
+
+# if __name__ == '__main__':
+#     app.run()
