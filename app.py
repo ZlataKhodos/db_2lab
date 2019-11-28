@@ -8,9 +8,9 @@ from dao.orm.model import ormAlbum, ormStudent, ormGenre
 from forms.genre_form import GenreForm
 from forms.student_form import StudentForm
 from forms.album_form import AlbumForm
-import dash
-import dash_core_components as dcc
-import dash_html_components as html
+# import dash
+# import dash_core_components as dcc
+# import dash_html_components as html
 
 app = Flask(__name__)
 
